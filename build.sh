@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REGISTRY_URL=docker.io/curiouscontainers/cc-image-debian
-TAG=0.4
+TAG=0.5
 
 docker pull docker.io/debian:jessie
 docker pull ${REGISTRY_URL}
