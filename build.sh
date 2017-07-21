@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 REGISTRY_URL=docker.io/curiouscontainers/cc-image-debian
-TAG=0.11
+TAG=0.12
 
-docker pull docker.io/debian:jessie
 docker pull ${REGISTRY_URL}
+docker pull docker.io/debian:jessie
 docker build --no-cache=true -t ${REGISTRY_URL} .
 docker push ${REGISTRY_URL}
 
